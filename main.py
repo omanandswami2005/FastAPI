@@ -75,4 +75,4 @@ async def get_profile(username: str):
 # The app entry point for production
 if __name__ == "__main__":
     # This block ensures that Uvicorn handles the app during deployment
-    uvicorn.run("leetcode:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
