@@ -26,7 +26,7 @@ app.add_middleware(
 # Fetching profile data from LeetCode
 def fetch_leetcode_profile(username: str) -> LeetCodeProfile:
     session = HTMLSession()
-    url = f"https://leetcode.com/{username}/"
+    url = f"https://leetcode.com/u/{username}/"
 
     try:
         response = session.get(url, timeout=10)  # Adding timeout
