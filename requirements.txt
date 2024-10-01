@@ -1,5 +1,4 @@
 fastapi
 uvicorn
-requests_html
 lxml[html_clean]
-pydantic
+requests
